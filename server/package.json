@@ -1,0 +1,28 @@
+{
+  "name": "server-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "dataloader": "cross-env DEBUG=knex:query nodemon src/dataloader-example.js",
+    "join": "cross-env DEBUG=knex:query nodemon src/join-example.js"
+  },
+  "dependencies": {
+    "apollo-datasource": "0.6.3",
+    "apollo-server": "^2.9.15",
+    "cross-env": "^6.0.3",
+    "dataloader": "2.0.0",
+    "env": "0.0.2",
+    "faker": "4.1.0",
+    "graphql": "^14.5.8",
+    "knex": "0.20.6",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "apollo": "2.21.2",
+    "jest": "24.9.0",
+    "nodemon": "^2.0.2",
+    "typescript": "^3.7.4"
+  }
+}
